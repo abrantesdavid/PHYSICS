@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{article}
+\input{elementos/preamble}
+
+\urlstyle{same}
+
+\begin{document}
+
+\renewcommand{\tablename}{Tabela}
+\renewcommand{\figurename}{Figura}
+
+% CAPA
+\thispagestyle{empty}
+\input{frente/capa}
+\clearpage
+
+% CONTRACAPA 
+\thispagestyle{empty}
+\input{frente/contracapa}
+\clearpage
+
+% SUMÁRIO
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\clearpage
+
+% INTRODUÇÃO
+\newpage
+\setcounter{page}{3}
+\section{INTRODUÇÃO}
+Texto da Introdução.
+
+
+% OBJETIVO
+\newpage
+\section{OBJETIVO}
+Texto do Objetivo.
+
+% MATERIAIS E MÉTODOS
+\section{MATERIAIS E MÉTODOS}
+
+% Materiais
+\subsection{MATERIAIS}
+Para a realização do experimento, foram utilizados os seguintes
+materiais:
+
+\begin{itemize}
+    \item item
+    \item item
+    \item item
+\end{itemize}
+
+% Métodos
+\subsection{MÉTODOS}
+Texto dos Métodos.
+
+% RESULTADOS E DISCUSSÃO
+\newpage
+\section{RESULTADOS E DISCUSSÃO}
+Texto dos Resultados e Discussão.
+
+% CONCLUSÃO
+\newpage
+\section{CONCLUSÃO}
+Texto da Conclusão
+
+% REFERÊNCIAS
+\newpage
+
+\nocite{vuolo1996erros}
+\nocite{young2016fisica1}
+\nocite{guia}
+
+\begingroup
+\setlength{\emergencystretch}{3em}
+\sloppy
+\printbibliography[
+    heading=bibintoc,
+    title={REFERÊNCIAS}
+]
+\endgroup
+
+\end{document}
