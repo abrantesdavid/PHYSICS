@@ -1,0 +1,87 @@
+% Codificação e língua
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{csquotes}
+
+% Espaçamento
+\usepackage{setspace}
+\onehalfspacing
+
+% Referências
+\usepackage[backend=biber,style=abnt]{biblatex}
+\addbibresource{elementos/references.bib}
+
+% Matemática
+\usepackage{amsmath,amssymb,amsthm}
+
+% Fonte
+\usepackage{newtxtext,newtxmath}
+
+% Layout
+\usepackage[
+    a4paper,
+    top=3cm,
+    left=3cm,
+    right=2cm,
+    bottom=2cm
+]{geometry}
+
+% Tabelas
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+
+% Cores
+\usepackage{xcolor}
+
+% Títulos
+\usepackage{titlesec}
+
+% Cabeçalho e rodapé
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\pagestyle{fancy}
+
+% Figuras e gráficos
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,decorations.pathmorphing}
+
+\usepackage[font=footnotesize]{caption}
+\usepackage{float}
+
+% Justificação
+\usepackage{ragged2e}
+
+% Parágrafos
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+
+% Links
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black,
+    pdfborder={0 0 0}
+}
+
+\pgfplotsset{compat=1.18}
+
+% Unidades do Sistema Internacional
+\usepackage{siunitx}
+\sisetup{
+    output-decimal-marker={,},
+    separate-uncertainty=true,
+    per-mode=symbol
+}
